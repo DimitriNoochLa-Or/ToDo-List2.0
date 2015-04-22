@@ -11,10 +11,10 @@
 				<?php require("includes/connect.php") ?>
 			</ul>
 		</div>
-	</div>
 	<form class="add-new-task" autocomplete="off">
 		<input type="text" name="new-task" placeholder="Add new item..."/>
 	</form>
+	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 <script>
