@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Simple To-Do List </title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title> Simple To-Do List </title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-<div class="wrap">
-<div class="task-list">
-<ul>
-<?php require("includes/connect.php");
-// <!-- call this file -->
-$mysqli = new mysqli('locahost', 'root' , 'root', 'todo');
-$query = "SELECT * FROM todo ORDER BY date ASC, time ASC";
-if ($result = $mysqli->query($query)) {//if result equals
-//the information from result to go to num_rows
-$numrows = $result->num_rows:
-if ($num_rows>0) {//if num rows is greater then 0 it does the if statement
-while($row = $result->fecth_assoc()){
-$task_id = $row['id'];
-$task_name = $row['task'];
-echo "<li>
-<span>'.$task_name'
-";
-}
-}
-}
+	<div class="wrap">
+		<div class="task-list">
+			<ul>
+							<?php require("includes/connect.php");
+									// <!-- call this file -->
+							$mysqli = new mysqli('locahost', 'root' , 'root', 'todo');
+						$query = "SELECT * FROM todo ORDER BY date ASC, time ASC";
+		if ($result = $mysqli->query($query)) {//if result equals
+			//the information from result to go to num_rows
+			$numrows = $result->num_rows:
+		if ($num_rows>0) {//if num rows is greater then 0 it does the if statement
+		while($row = $result->fecth_assoc()){
+		$task_id = $row['id'];
+		$task_name = $row['task'];
+			echo '<li>
+			<span>'.$task_name. '</span>
+			<img id="'.$task_id.'" class="delete-button" width="10px" src="images/close.svg"/>
+			</li>';
+			}
+		}
+	}
 ?>
 </ul>
 </div>
