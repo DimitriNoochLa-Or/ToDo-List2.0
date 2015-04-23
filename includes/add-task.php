@@ -6,7 +6,7 @@
 	include('connect.php');// connecting to the connect.php
 
 
-	$mysqli = new msqli("localhost" , "root", "root", 'tasks');
+	$mysqli = new mysqli("localhost" , "root", "root", 'tasks');
 	$mysqli ->query("INSERT INTO tasks VALUES ('', '$task', '$date', '$time')");
 
 	$query = "SELECT * FROM tasks WHERE task='$task' and date='$date' and time='$time'";
