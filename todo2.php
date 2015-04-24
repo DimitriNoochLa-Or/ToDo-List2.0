@@ -2,14 +2,11 @@
 <head>
 		<title> Simple To-Do List </title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">	
-	
-
-
 </head>	
 <body>
 
 		<div class="wrap">
-		<div class="header"> TO-DO LIST:</div>
+		<div class="header title"> TO-DO LIST:</div>
 			<div class="task-list">
 			 		<ul>
 			 			<?php require("includes/connect.php");

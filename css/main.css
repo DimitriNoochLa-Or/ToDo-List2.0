@@ -1,10 +1,8 @@
 @import "reset.css";
 @import "normalize.css";
-@import "<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>";
+@import "<link href='http://fonts.googleapis.com/css?family=Ceviche+One' rel='stylesheet' type='text/css'>";
 
 body{
-	font: normal 14px;
-	font-family: 'Indie Flower', cursive;
 	color: #999;
 	background: gray;
 }
@@ -12,6 +10,8 @@ body{
 .wrap{
 	width: 400px;
 	margin: 0 auto;
+	font: normal 14px;
+	font-family: 'Ceviche One', cursive;	
 }
 
 .task-list{
@@ -21,4 +21,8 @@ body{
 	box-shadow: 2px 2px 0px #ddd;
 	margin-top: 5%;
 	padding: 22px 6%;
+}
+.title{
+	font: normal 14px;
+	font-family: 'Ceviche One', cursive;	
 }
