@@ -14,12 +14,12 @@
 			
 			require_once(__DIR__ . "/view/body.php");
 			require_once(__DIR__ . "/controller/create-db.php");
-			require_once(__DIR__ . "/view/login-form.php");
 			require_once(__DIR__ . "/view/register-form.php");
+			require_once(__DIR__ . "/view/login-form.php");
 			require_once(__DIR__ . "/view/footer.php");
 	?>
 	
-    </div>         
+           
     
 
 

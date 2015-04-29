@@ -1,12 +1,20 @@
 <html>	
 <head>
 		<title> Simple To-Do List </title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">	
-</head>	
-<body>
+		<link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 
-		<div class="wrap">
-		<div class="header title"> TO-DO LIST:</div>
+		<link rel="stylesheet" type="text/css" href="css/main2.css">	
+
+
+</head>	
+<body class="body2">
+
+		<div class="wrap wrap2">
+		<br><br>
+		<br><br>
+		<div class="header title glitch" data-text="TO-DO LIST:"> TO-DO LIST:</div>
 			<div class="task-list">
 			 		<ul>
 			 			<?php require("includes/connect.php");
@@ -31,7 +39,7 @@
 			 		</ul>
 			</div>
 		<form class="add-new-task" autocomplete="off">
-			<input class="tasklength" type="text" name="new-task" placeholder="Add new item..."/>
+			<input type="text" name="new-task" placeholder="Add new item..."/>
 		</form>
 		</div>
 </body>

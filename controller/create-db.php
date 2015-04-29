@@ -11,8 +11,8 @@
 
 	if ($query) {									// checks to see if this statement exists
 		
-		echo "<p>Successfully created table: users</p>";   // lets you know that it succesfully created table:posts
+		//echo "<p>Successfully created table: users</p>";   // lets you know that it succesfully created table:posts
 	}
 	else{
-		echo "<p>" . $_SESSION["connection"]->error . "</p>";			//lets you know that table:posts already exists
+		//echo "<p>" . $_SESSION["connection"]->error . "</p>";			//lets you know that table:posts already exists
 	}

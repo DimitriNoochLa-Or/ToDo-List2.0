@@ -13,19 +13,21 @@
 	<body>
 	<br>
 	<br>
+		<div class="text-center">
 		<h1>Login</h1>
-		<form method="post" action="<?php echo $path . "/../controller/login-user.php" ; ?>">
-		        <div class="login fonttext">
+		</div>
+		<form method="post" action="<?php echo $path . "todo2.php" ; ?>">
+		        <div class="login fonttext2 text-center">
 					<label for="username">Username:</label>
-					<input type="text" name="username" />
+					<input  class="fonttext"type="text" name="username" />
 				</div>
-			    <div class="login fonttext">
+			    <div class="login fonttext2 text-center">
 					<label for="password">Password:</label>
-					<input type="password" name="password" />
+					<input  class="fonttext" type="password" name="password" />
 				</div>
 
-			    <div class="login fonttext">
-					<button type="submit">click I Dare You ....... i dare you</button>
+			    <div class="login fonttext2 text-center">
+					<button  class="btn btn-primary btn-color" type="submit">Enter</button>
 				</div>
 		</form>
 

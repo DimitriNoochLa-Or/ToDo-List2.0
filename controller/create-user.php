@@ -23,3 +23,4 @@ $query = $_SESSION["connection"]->query("INSERT INTO users SET "
 	else{
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
+?>
